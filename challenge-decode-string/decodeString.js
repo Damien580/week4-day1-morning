@@ -50,25 +50,25 @@
     console.log('=============================================')
 
 
-    const decoder = str =>{
-        let cypher = parseInt(str[0])
-        let alphabet = ['a', 'b', 'c','d', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']   
+    // const decoder = str =>{
+    //     let cypher = parseInt(str[0])
+    //     let alphabet = ['a', 'b', 'c','d', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']   
         
-        strArr = str.slice(1).toLowerCase().split('')
+    //     strArr = str.slice(1).toLowerCase().split('')
 
-        for (i = 0; i < strArr.length; i++){
+    //     for (i = 0; i < strArr.length; i++){
 
-            index = alphabet.indexOf(strArr[i])
-            index += cypher
+    //         index = alphabet.indexOf(strArr[i])
+    //         index += cypher
 
-            if (index > 25){
-                index -= 25
-        }
-                str[i] = alphabet[index]
-        }
+    //         if (index > 25){
+    //             index -= 25
+    //     }
+    //             str[i] = alphabet[index]
+    //     }
 
-            return strArr.join('')
-        }
+    //         return strArr.join('')
+    //     }
     
 
-    console.log(decoder('2fcjjm'))
+    // console.log(decoder('2fcjjm'))
